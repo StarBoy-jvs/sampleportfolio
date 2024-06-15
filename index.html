@@ -13,6 +13,21 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>RMK</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+    .image-container {
+      width: 200px;
+      overflow: hidden;
+    }
+    
+    .image-container img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    </style>
 </head>
 
 <body>
@@ -42,6 +57,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -50,28 +66,36 @@
     <!-- NavBar end -->
     <!-- Home Page start -->
 
-    <section class="home py-5" id="home">
+
+    <section class="home py-1" id="home">
+<div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="home.jpg" class="img-fluid mw-100">
+      <div class="carousel-caption d-none d-md-block text-center">
+        <h1 class="display-1"><b>R. M. Engineering Works</b></h1>
+	<h1 class="display-6"><b><i class="text-end">Accurate and Precise</i></b></h1>
+        <h3 class="display-6">We are manufacturers and suppliers of precise & accurately machined spare parts, including assemblies and sub-assemblies.</h3>
+      </div>
+      </div>
+     </div>
         <div class="container">
+		<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+   
+
             <div class="row min-vh-100 align-items-center align-content-center">
                 <div class="col-md-6 mt-5 mt-md-0">
                     <div class="home-img text-center">
-                        <img src="fab1.jpeg" class=" img-fluid mw-100" alt="profile image">
+                        <img src="company.jpg" class=" img-fluid mw-100" alt="profile image">
                     </div>
                 </div>
                 <div class="col-md-6 order-md-first">
                     <div class="home-text">
-                        <p>Hello we're</p>
                         <h1 class="text-danger text-uppercase fs-1 fw-bold">RMK</h1>
-                        <h3 class="fs-4">Oilla Jaduuu</h3>
-                        <p class="mt-4 text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. In ad ab
-                            accusantium commodi assumenda officia sit
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam asperiores, modi sunt fugit
-                            porro vel iure eveniet sapiente, quod quo maxime vitae corrupti repellat veniam voluptatibus
-                            atque. Architecto magnam unde quis numquam sunt saepe. Voluptatem voluptatum magni fugiat
-                            laborum voluptas tenetur pariatur iusto voluptatibus, rem doloremque minus sequi labore
-                            repudiandae!
-                        </p>
+                        <h3 class="fs-4">Our Company</h3>
+                        <p class="mt-4 text-muted ">
+				<b>R. M. Engineering Works</b>, established in 2003, is dedicated to solving engineering challenges with accuracy, precision, loyalty, and timely delivery. We specialize in serving the sectors of diesel engines, anti-vibration mount components, defense factories, heat treatment technologies, CNC machining, precision machining, and the manufacturing of spare parts for assemblies and sub-assemblies.We adhere to the engineering code of practices and standards prioritizing health, safety and ultimate satisfaction of our client.
+		        
+                </p>
                     </div>
                 </div>
             </div>
@@ -89,83 +113,57 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-lg-4 card-group">
+                            <div class="col-lg-4 card-group d-flex flex-column">
                                 <div class="card">
-                                    <img src="fab1.jpeg" class="card-img-top" alt="...">
+                                    <img src="production.jpg" class="card-img-top" alt="...">
                                     <div class="card-body bg-danger">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Production</h5>
+                                        <p class="card-text">
+					<ul>
+					  <li>Precise machining spare parts</li>
+					 <li>Indian Defence related spare parts</li>
+					<li>Spare Parts for Anti-vibration mounts</li>
+					</ul> </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 card-group">
+                            <div class="col-lg-4 card-group d-flex flex-column">
                                 <div class="card">
-                                    <img src="fab2.jpeg" class="card-img-top" alt="...">
+                                    <img src="manufacture.jpg" class="card-img-top" alt="...">
                                     <div class="card-body bg-danger">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Manufacturing</h5>
+                                        <p class="card-text">
+					<ul>
+					  <li>Accurate and Precise machine parts</li>
+					  <li>Levelling Pad</li>
+					  <li>Assembly, Sub-Assembly Components</li>
+					  <li>Cutting, Bending, Rubber Moulding dies</li>
+					<li>Jigs and Fixtures</li>	
+					</ul>  
+					</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 card-group">
+                            <div class="col-lg-4 card-group d-flex flex-column">
                                 <div class="card">
-                                    <img src="fab3.jpeg" class="card-img-top" alt="...">
+                                    <img src="fabric.jpg" class="card-img-top" alt="...">
                                     <div class="card-body bg-danger">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
+                                        <h5 class="card-title">Fabrication</h5>
+                                        <p class="card-text">
+					<ul>
+					  <li>Inhouse solution for stainless steel, mild Steel welding</li>
+					 	
+					</ul>  
+					</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row text-center ">
-                            <div class="col-lg-4 card-group">
-                                <div class="card" ">
-                                    <img src="fab4.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body bg-danger">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 card-group">
-                                <div class="card">
-                                    <img src="fab2.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body bg-danger">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card" ">
-                                    <img src="fab3.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body bg-danger">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                
             </div>
         </div>
     </section>
@@ -186,29 +184,90 @@
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12"
+                            aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="fab3.jpeg" class="d-block w-100" alt="...">
+                            <img src="r1.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="fab2.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-item ">
+                            <img src="r2.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <img src="fab1.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-item ">
+                            <img src="r3.jpg" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
                             </div>
                         </div>
+                        <div class="carousel-item ">
+                            <img src="r4.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="r5.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="r6.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="r7.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="r8.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="r9.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="r10.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="r11.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="r12.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                         data-bs-slide="prev">
@@ -222,7 +281,7 @@
                     </button>
                 </div>
             </div>
-        </div </section>
+        </div> </section>
 
         <!-- Recent Work end -->
 
@@ -242,18 +301,9 @@
                     <div class="col-md-6">
                         <div class="home-text">
                             <h1 class="text-danger text-uppercase fs-1 fw-bold">RMK</h1>
-                            <h3 class="fs-4">Oilla Jaduuu</h3>
-                            <p class="mt-4 text-muted ">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. In ad ab
-                                accusantium commodi assumenda officia sit
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam asperiores, modi sunt
-                                fugit
-                                porro vel iure eveniet sapiente, quod quo maxime vitae corrupti repellat veniam
-                                voluptatibus
-                                atque. Architecto magnam unde quis numquam sunt saepe. Voluptatem voluptatum magni
-                                fugiat
-                                laborum voluptas tenetur pariatur iusto voluptatibus, rem doloremque minus sequi labore
-                                repudiandae!
+                            <h3 class="fs-4">About Us</h3>
+                            <p class="mt-4 text-muted ">
+				Since 2003, <b>R. M. Engineering Works</b> has been dedicated to solving engineering challenges with accuracy, precision, loyalty, and timely delivery. In the field of mechanical engineering, we strive to serve our customers professionally. Our commitment lies in providing reliable, efficient, and cost-effective solutions to companies. We adhere to engineering codes of practice and standards, prioritizing health, safety, and the ultimate satisfaction of our clients. <b>R. M. Engineering Works</b> takes pride in offering top-notch services and assuming responsibility for designing and executing entire projects with precision. Please find a list of our services and clientele that attests to our work quality and experience. If you have any pre-qualification queries about our company, feel free to contact us. We’re here to assist you. Thank you for considering our services, we assure you of our best efforts and cooperation.
                             </p>
                         </div>
                     </div>
@@ -277,22 +327,61 @@
                 </div>
                 <div class="row justify-content-center text-center">
                     <div class="about-text text-center">
-                        <h3 class="fs-4 mb-3 text-danger">Email us: </h3>
-                        <p>rmk@gmail.com</p>
+                        <h3 class="mb-3 text-danger "><b>Email us: </b></h3>
+                        <h4 class="font-awesome">rmengineeringworks9370@gmail.com</h4>
                     </div>
                     <div class="about-text text-center">
-                        <h3 class="fs-4 mb-3 text-danger">Call us: </h3>
-                        <p>1234567890</p>
+                        <h3 class="mb-3 text-danger"><b>Call us: </b></h3>
+                        <h4 class="font-awesome">Mr. Rohan Kharat: +91 9545631694</h4>
                     </div>
                     <div class="about-text text-center">
-                        <h3 class="fs-4 mb-3 text-danger">Visit us at: </h3>
-                        <p>Muhammadwadi,Hadapsar Pune</p>
+                        <h3 class="mb-3 text-danger "><b>Visit us at: </b></h3>
+                        <h4 class="font-awesome">Sr No 63/1/1A, Badade Mala, Indrayani Park, Handewadi road, Hadapsar, Pune-411028</h4>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Page end -->
+
+
+        <!--Clients -->
+
+ <div class="container">
+	<div class="row">
+        <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Our clients</h2>
+        </div>
+		<div class="col-md-12">
+			<div class="lc-block">
+				<div id="carouselLogos" class="carousel slide pt-5 pb-4" data-bs-ride="carousel">
+
+					<div class="carousel-inner px-5">
+						
+						<div class="carousel-item-active">
+							<div class="row">
+								<div class="col-6 col-lg-2 align-self-center">
+									<img class="d-block w-100 px-3 mb-3" src="logo.png" alt="">
+								</div>
+                <div class="col-6 col-lg-2  align-self-center">
+                  <img class="d-block w-100 px-3  mb-3" src="logo-footer.png" alt="">
+                </div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-9  mb-3" src="logo (1).png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="schreiber-logo.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-9  mb-3 width: 120px" src="chintamani-thermal-logo.jpg" alt="">
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
