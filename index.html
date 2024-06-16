@@ -13,20 +13,30 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>RMK</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<style>
-    .image-container {
-      width: 200px;
-      overflow: hidden;
-    }
-    
-    .image-container img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .image-container {
+            width: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+        .card-title,
+        .card-subtitle,
+        .card-text {
+    font-size: 0.5rem;
+  }
+}
+
+       
+
     </style>
 </head>
 
@@ -57,7 +67,7 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -66,40 +76,49 @@
     <!-- NavBar end -->
     <!-- Home Page start -->
 
-
-    <section class="home py-1" id="home">
-<div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="home.jpg" class="img-fluid mw-100">
-      <div class="carousel-caption d-none d-md-block text-center">
-        <h1 class="display-1"><b>R. M. Engineering Works</b></h1>
-	<h1 class="display-6"><b><i class="text-end">Accurate and Precise</i></b></h1>
-        <h3 class="display-6">We are manufacturers and suppliers of precise & accurately machined spare parts, including assemblies and sub-assemblies.</h3>
-      </div>
-      </div>
-     </div>
-        <div class="container">
-		<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-   
-
-            <div class="row min-vh-100 align-items-center align-content-center">
-                <div class="col-md-6 mt-5 mt-md-0">
-                    <div class="home-img text-center">
-                        <img src="company.jpg" class=" img-fluid mw-100" alt="profile image">
-                    </div>
-                </div>
-                <div class="col-md-6 order-md-first">
-                    <div class="home-text">
-                        <h1 class="text-danger text-uppercase fs-1 fw-bold">RMK</h1>
-                        <h3 class="fs-4">Our Company</h3>
-                        <p class="mt-4 text-muted ">
-				<b>R. M. Engineering Works</b>, established in 2003, is dedicated to solving engineering challenges with accuracy, precision, loyalty, and timely delivery. We specialize in serving the sectors of diesel engines, anti-vibration mount components, defense factories, heat treatment technologies, CNC machining, precision machining, and the manufacturing of spare parts for assemblies and sub-assemblies.We adhere to the engineering code of practices and standards prioritizing health, safety and ultimate satisfaction of our client.
-		        
-                </p>
-                    </div>
+    <div class="container">
+        <div class="card">
+            <img src="home.jpg" class="card-img img-fluid">
+            <div class="card-img-overlay">
+                <div class="card-body text-light carousel-caption  text-center">
+                    <h1 class="card-title "><b>R. M. Engineering Works</b></h1>
+                    <p class="card-subtitle "><b><i>Accurate and Precise</i></b></p>
+                    <p class="card-text">We are manufacturers and suppliers of precise & accurately machined spare
+                        parts, including assemblies and sub-assemblies.</p>
                 </div>
             </div>
         </div>
+    </div>
+
+    <section class="home py-1" id="home">
+        <div class="container">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+
+                <div class="row min-vh-100 align-items-center align-content-center">
+                    <div class="col-md-6 mt-5 mt-md-0">
+                        <div class="home-img text-center">
+                            <img src="company.jpg" class=" img-fluid mw-100" alt="profile image">
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-first">
+                        <div class="home-text">
+                            <h1 class="text-danger text-uppercase fs-1 fw-bold">RMK</h1>
+                            <h3 class="fs-4">Our Company</h3>
+                            <p class="mt-4 text-muted ">
+                                <b>R. M. Engineering Works</b>, established in 2003, is dedicated to solving engineering
+                                challenges with accuracy, precision, loyalty, and timely delivery. We specialize in
+                                serving the sectors of diesel engines, anti-vibration mount components, defense
+                                factories, heat treatment technologies, CNC machining, precision machining, and the
+                                manufacturing of spare parts for assemblies and sub-assemblies.We adhere to the
+                                engineering code of practices and standards prioritizing health, safety and ultimate
+                                satisfaction of our client.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
     <!-- Home Page end -->
 
@@ -119,11 +138,12 @@
                                     <div class="card-body bg-danger">
                                         <h5 class="card-title">Production</h5>
                                         <p class="card-text">
-					<ul>
-					  <li>Precise machining spare parts</li>
-					 <li>Indian Defence related spare parts</li>
-					<li>Spare Parts for Anti-vibration mounts</li>
-					</ul> </p>
+                                        <ul>
+                                            <li>Precise machining spare parts</li>
+                                            <li>Indian Defence related spare parts</li>
+                                            <li>Spare Parts for Anti-vibration mounts</li>
+                                        </ul>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -133,14 +153,14 @@
                                     <div class="card-body bg-danger">
                                         <h5 class="card-title">Manufacturing</h5>
                                         <p class="card-text">
-					<ul>
-					  <li>Accurate and Precise machine parts</li>
-					  <li>Levelling Pad</li>
-					  <li>Assembly, Sub-Assembly Components</li>
-					  <li>Cutting, Bending, Rubber Moulding dies</li>
-					<li>Jigs and Fixtures</li>	
-					</ul>  
-					</p>
+                                        <ul>
+                                            <li>Accurate and Precise machine parts</li>
+                                            <li>Levelling Pad</li>
+                                            <li>Assembly, Sub-Assembly Components</li>
+                                            <li>Cutting, Bending, Rubber Moulding dies</li>
+                                            <li>Jigs and Fixtures</li>
+                                        </ul>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -150,21 +170,21 @@
                                     <div class="card-body bg-danger">
                                         <h5 class="card-title">Fabrication</h5>
                                         <p class="card-text">
-					<ul>
-					  <li>Inhouse solution for stainless steel, mild Steel welding</li>
-					 	
-					</ul>  
-					</p>
+                                        <ul>
+                                            <li>Inhouse solution for stainless steel, mild Steel welding</li>
+
+                                        </ul>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    </div>
+
                 </div>
-                
             </div>
+
+        </div>
         </div>
     </section>
 
@@ -266,8 +286,8 @@
                             <div class="carousel-caption d-none d-md-block">
                             </div>
                         </div>
-                        
-                        
+
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                         data-bs-slide="prev">
@@ -281,110 +301,123 @@
                     </button>
                 </div>
             </div>
-        </div> </section>
-
-        <!-- Recent Work end -->
-
-
-        <!-- About Page Start -->
-        <section class="about bg-white py-5" id="about">
-            <div class="text-center mt-3">
-                <h2 class="fw-bold">About Us</h2>
-            </div>
-            <div class="container">
-                <div class="row min-vh-100 align-items-center align-content-center">
-                                        <div class="col-md-6 mt-5">
-                        <div class="home-img text-center">
-                            <img src="portfolio.png" class=" img-fluid mw-100" alt="profile image">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="home-text">
-                            <h1 class="text-danger text-uppercase fs-1 fw-bold">RMK</h1>
-                            <h3 class="fs-4">About Us</h3>
-                            <p class="mt-4 text-muted ">
-				Since 2003, <b>R. M. Engineering Works</b> has been dedicated to solving engineering challenges with accuracy, precision, loyalty, and timely delivery. In the field of mechanical engineering, we strive to serve our customers professionally. Our commitment lies in providing reliable, efficient, and cost-effective solutions to companies. We adhere to engineering codes of practice and standards, prioritizing health, safety, and the ultimate satisfaction of our clients. <b>R. M. Engineering Works</b> takes pride in offering top-notch services and assuming responsibility for designing and executing entire projects with precision. Please find a list of our services and clientele that attests to our work quality and experience. If you have any pre-qualification queries about our company, feel free to contact us. We’re here to assist you. Thank you for considering our services, we assure you of our best efforts and cooperation.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Page end -->
-
-
-        <!-- Contact Page Start -->
-        <section class="contact bg-white py-5" id="contact">
-
-            <div class="container py-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center">
-                            <h2 class="fw-bold mb-5">Contact Us</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center text-center">
-                    <div class="about-text text-center">
-                        <h3 class="mb-3 text-danger "><b>Email us: </b></h3>
-                        <h4 class="font-awesome">rmengineeringworks9370@gmail.com</h4>
-                    </div>
-                    <div class="about-text text-center">
-                        <h3 class="mb-3 text-danger"><b>Call us: </b></h3>
-                        <h4 class="font-awesome">Mr. Rohan Kharat: +91 9545631694</h4>
-                    </div>
-                    <div class="about-text text-center">
-                        <h3 class="mb-3 text-danger "><b>Visit us at: </b></h3>
-                        <h4 class="font-awesome">Sr No 63/1/1A, Badade Mala, Indrayani Park, Handewadi road, Hadapsar, Pune-411028</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Page end -->
-
-
-        <!--Clients -->
-
- <div class="container">
-	<div class="row">
-        <div class="section-title text-center">
-            <h2 class="fw-bold mb-5">Our clients</h2>
         </div>
-		<div class="col-md-12">
-			<div class="lc-block">
-				<div id="carouselLogos" class="carousel slide pt-5 pb-4" data-bs-ride="carousel">
+    </section>
 
-					<div class="carousel-inner px-5">
-						
-						<div class="carousel-item-active">
-							<div class="row">
-								<div class="col-6 col-lg-2 align-self-center">
-									<img class="d-block w-100 px-3 mb-3" src="logo.png" alt="">
-								</div>
-                <div class="col-6 col-lg-2  align-self-center">
-                  <img class="d-block w-100 px-3  mb-3" src="logo-footer.png" alt="">
+    <!-- Recent Work end -->
+
+
+    <!-- About Page Start -->
+    <section class="about bg-white py-5" id="about">
+        <div class="text-center mt-3">
+            <h2 class="fw-bold">About Us</h2>
+        </div>
+        <div class="container">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-6 mt-5">
+                    <div class="home-img text-center">
+                        <img src="portfolio.png" class=" img-fluid mw-100" alt="profile image">
+                    </div>
                 </div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-9  mb-3" src="logo (1).png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="schreiber-logo.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-9  mb-3 width: 120px" src="chintamani-thermal-logo.jpg" alt="">
-								</div>
-							</div>
+                <div class="col-md-6">
+                    <div class="home-text">
+                        <h1 class="text-danger text-uppercase fs-1 fw-bold">RMK</h1>
+                        <h3 class="fs-4">About Us</h3>
+                        <p class="mt-4 text-muted ">
+                            Since 2003, <b>R. M. Engineering Works</b> has been dedicated to solving engineering
+                            challenges with accuracy, precision, loyalty, and timely delivery. In the field of
+                            mechanical engineering, we strive to serve our customers professionally. Our commitment lies
+                            in providing reliable, efficient, and cost-effective solutions to companies. We adhere to
+                            engineering codes of practice and standards, prioritizing health, safety, and the ultimate
+                            satisfaction of our clients. <b>R. M. Engineering Works</b> takes pride in offering
+                            top-notch services and assuming responsibility for designing and executing entire projects
+                            with precision. Please find a list of our services and clientele that attests to our work
+                            quality and experience. If you have any pre-qualification queries about our company, feel
+                            free to contact us. We’re here to assist you. Thank you for considering our services, we
+                            assure you of our best efforts and cooperation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						</div>
-
-					</div>
+    <!-- About Page end -->
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
+    <!-- Contact Page Start -->
+    <section class="contact bg-white py-5" id="contact">
+
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5">Contact Us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="about-text text-center">
+                    <h3 class="mb-3 text-danger "><b>Email us: </b></h3>
+                    <h5 class="font-awesome">rmengineeringworks9370@gmail.com</h5>
+                </div>
+                <div class="about-text text-center">
+                    <h3 class="mb-3 text-danger"><b>Call us: </b></h3>
+                    <h5 class="font-awesome">Mr. Rohan Kharat: +91 9545631694</h5>
+                </div>
+                <div class="about-text text-center">
+                    <h3 class="mb-3 text-danger "><b>Visit us at: </b></h3>
+                    <h5 class="font-awesome">Sr No 63/1/1A, Badade Mala, Indrayani Park, Handewadi road, Hadapsar,
+                        Pune-411028</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page end -->
+
+
+    <!--Clients -->
+
+    <div class="container">
+        <div class="row">
+            <div class="section-title text-center">
+                <h2 class="fw-bold mb-5">Our clients</h2>
+            </div>
+            <div class="col-md-12">
+                <div class="lc-block">
+                    <div id="carouselLogos" class="carousel slide pt-5 pb-4" data-bs-ride="carousel">
+
+                        <div class="carousel-inner px-5">
+
+                            <div class="carousel-item-active">
+                                <div class="row">
+                                    <div class="col-6 col-lg-2 align-self-center">
+                                        <img class="d-block w-100 px-3 mb-3" src="logo.png" alt="">
+                                    </div>
+                                    <div class="col-6 col-lg-2  align-self-center">
+                                        <img class="d-block w-100 px-3  mb-3" src="logo-footer.png" alt="">
+                                    </div>
+                                    <div class="col-6 col-lg-2  align-self-center">
+                                        <img class="d-block w-100 px-9  mb-3" src="logo (1).png" alt="">
+                                    </div>
+                                    <div class="col-6 col-lg-2  align-self-center">
+                                        <img class="d-block w-100 px-3  mb-3" src="schreiber-logo.png" alt="">
+                                    </div>
+                                    <div class="col-6 col-lg-2  align-self-center">
+                                        <img class="d-block w-100 px-9  mb-3 width: 120px"
+                                            src="chintamani-thermal-logo.jpg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                            crossorigin="anonymous"></script>
 </body>
 
 
