@@ -145,6 +145,43 @@
                 max-height: 500px;
             }
         }
+
+        /* Ensure the fixed navbar is always on top */
+.navbar.fixed-top {
+    z-index: 1030; /* Bootstrap's default, good to ensure */
+}
+
+/* Adjust top positioning for the hero section text on smaller screens */
+@media (max-width: 991.98px) { /* Applies to screens smaller than large (lg) breakpoint */
+    .card-img-overlay .carousel-caption {
+        top: 15%; /* Start the caption 15% from the top of the overlay container */
+        transform: none; /* Remove any transform that might be vertically centering it */
+        /* You might need to adjust this percentage (e.g., 10%, 20%) based on your navbar's exact height and content */
+    }
+
+    /* You might also consider adjusting the font size for smaller screens if needed */
+    .card-img-overlay .carousel-caption .inc {
+        font-size: 0.8rem; /* Example: make text smaller on mobile */
+    }
+    .card-img-overlay .carousel-caption h1.inc {
+        font-size: 1.8rem !important; /* Example: adjust h1 size */
+    }
+}
+
+/* For very small screens, you might need an even larger top value or different sizing */
+@media (max-width: 575.98px) { /* Applies to screens smaller than small (sm) breakpoint */
+    .card-img-overlay .carousel-caption {
+        top: 10%; /* Adjust for very small phone screens, perhaps even more if needed */
+        /* Consider text wrapping here too. */
+    }
+    .card-img-overlay .carousel-caption h1.inc {
+        font-size: 1.3rem !important; /* Even smaller h1 */
+    }
+    .card-img-overlay .carousel-caption p.inc {
+        font-size: 0.6rem !important; /* Smaller paragraph text */
+    }
+}
+
     </style>
 </head>
 
@@ -199,7 +236,7 @@
         </nav>
     </div>
 
-    <section class="py-1">
+    <section class="py-1" id="mainContentStart">
         <div class="mt-3 sec-bg">
             <div class="container mt-3 px-3">
                 <div class="card">
