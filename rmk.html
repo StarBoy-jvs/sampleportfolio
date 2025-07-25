@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>R. M. Engineering Works</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .tcolor {
+            color: #e88d18 !important;
+        }
+
+        .title-1 {
+            font-weight: 800;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .image-container {
+            width: 200px;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .card-bg {
+            background-color: #888684;
+        }
+
+        .sec-bg {
+            background: #f3f3f3a8;
+        }
+
+
+        .text-box {
+            border: 1px solid #dee2e6;
+
+            background-image: url('home2.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: 0;
+        }
+
+        .text-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+            border-radius: inherit;
+        }
+
+        .table-striped>tbody>tr:nth-of-type(even) {
+            background-color: #f3b461;
+        }
+
+        .table-striped>tbody>tr:nth-of-type(odd) {
+            background-color: #ffffff;
+        }
+
+        .table-striped>tbody>tr:hover {
+            background-color: #e5a452;
+        }
+
+        .table thead th {
+            background-color: #f3b461;
+            color: #333;
+        }
+
+
+        .client-logo-wrapper {
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+
+        .client-logo {
+            max-width: 45%;
+            max-height: 55px;
+            object-fit: contain;
+        }
+
+        body {
+            padding-top: 76px;
+
+        }
+
+        #home,
+        #strengths,
+        #services,
+        #products,
+        #products2,
+        #about,
+        #clients,
+        #contact {
+            scroll-margin-top: 90px !important;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 768px) {
+            .inc {
+                font-size: 0.5rem;
+            }
+        }
+
+
+
+        @media (min-width: 768px) {
+            .card-img {
+                max-height: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-4 tcolor title-1" href="#">R. M. Engineering Works
+                    <img src="iso.jpg" alt="ISO Certified" class="ms-3" style="height: 50px;">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#strengths">Strengths</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#products2">Other Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#clients">Our Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text fs-4">
+                        <a href="tel:+919876543210" class="fw-bolder rounded-pill"
+                            style="text-decoration: none; background-color:  #f3b461; padding: 0.5rem 1rem; color: #040404;">
+                            📞 +91-9876543210
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="py-1">
+        <div class="mt-3 sec-bg">
+            <div class="container mt-3 px-3">
+                <div class="card">
+                    <video id="introVideo" class="card-img w-100 h-auto" autoplay muted playsinline>
+                        <source src="intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <img id="fallbackImage" src="home2.jpg" class="card-img img-fluid w-100 h-auto d-none">
+
+                    <div class="card-img-overlay">
+                        <div class="card-body text-light carousel-caption text-center">
+                            <h1 class="card-title fw-bolder fs-1 inc tcolor"><b>R. M. Engineering Works</b></h1>
+                            <p class="card-subtitle inc mb-3"><b><i>Accurate and Precise</i></b></p>
+                            <p class="card-text inc mb-0 fw-bold">
+                                "We specialize in the design, development, and execution of plastic and <br>rubber
+                                moulding,
+                                dies, and the manufacturing of accurate and precise machined components,<br> assemblies,
+                                and
+                                sub-assemblies."
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home py-1" id="home">
+        <div class="mt-3  sec-bg">
+            <div class="container">
+                <h2 class="tcolor title-1 text-center py-2">OUR COMPANY</h2>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                    data-bs-interval="2000">
+                    <div class="row mt-3 align-items-center align-content-center">
+                        <div class="col-md-6 mt-5 mt-md-0">
+                            <div class="home-img text-center">
+                                <div id="imageCarousel " class="carousel slide " data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="company.jpg" class=" img-fluid mw-100" alt="profile image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="company1.jpg" class=" img-fluid mw-100" alt="profile image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 order-md-first">
+                            <div class="home-text">
+                                <div class="row">
+                                    <h2 class="tcolor title-1 fs-5 mt-3">R. M. Engineering Works , established in 2003
+                                    </h2>
+                                    <p class="text-muted mb-0 fs-6 flex-grow-1">has been
+                                        committed to delivering reliable, precise, and costeffective
+                                        mechanical engineering solutions. With a
+                                        strong focus on quality, safety, and client satisfaction,
+                                        we specialize in end-to-end project execution while
+                                        adhering to industry standards. Our track record
+                                        reflects professionalism, timely delivery, and
+                                        dedication to engineering excellence. For prequalification
+                                        or service inquiries, please feel free to
+                                        contact us — we’re here to assist you.
+                                    <p></p>
+                                    <h2 class="tcolor title-1 fs-5 ">OUR VALUES </h2>
+                                    <h2 class="tcolor title-1 fs-5 ">MISSION</h2>
+                                    <p class="text-muted mb-0 fs-6 flex-grow-1">To deliver precise, reliable machined
+                                        components and assemblies through
+                                        advanced CNC technology, strict quality
+                                        control, and expert engineering.</p>
+                                    <P></P>
+                                    <h2 class="tcolor title-1 fs-5 ">VISION</h2>
+                                    <p class="text-muted mb-0 fs-6 flex-grow-1">To be a leader in the precision
+                                        manufacturing, trusted for innovation
+                                        and excellence in mission-critical
+                                        solutions.</p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="strengths py-1" id="strengths">
+        <div class="text-center mt-3 py  sec-bg">
+            <div class="container">
+                <h2 class="mb-5 tcolor title-1 py-2">OUR STRENGTHS</h2>
+                <div class="row">
+
+                    <div class="col-md-6 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect bg-white">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">Specialized Machining Setup</h4>
+                            <p>CNC turning Machines, VMC Machine, Lathe Machines
+                                Traub Machines, M1TR milling Machines
+                                Semi-automatic Bendsaw Cutting Machine, Drilling and
+                                Tapping Machines
+                                Argon Welding section, CO2 welding section, Aseembly section </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect bg-white">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">Quality</h4>
+                            <p> No Compromise with quality and inspection
+                                Skilled and Experienced Labour Force
+                                Reduced dependecy on outsourcing by conducting majority
+                                operations in-house</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services py-1" id="services">
+        <div class="text-center mt-3 py  sec-bg">
+            <div class="container">
+                <h2 class="mb-5 tcolor title-1 py-2">SERVICES</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-5 d-flex flex-column justify-content-around">
+                        <div class="text-box rounded p-3 mb-2 shadow-sm bg-white">
+                            <h4 class="tcolor title-1 fw-bolder">Defence factories</h4>
+                        </div>
+                        <div class="text-box rounded p-3 mb-2 shadow-sm bg-white">
+                            <h4 class="tcolor title-1 fw-bolder">Thermal technologies</h4>
+                        </div>
+                        <div class="text-box rounded p-3 mb-2 shadow-sm bg-white">
+                            <h4 class="tcolor title-1 fw-bolder">Anti-vibration mountings</h4>
+                        </div>
+                        <div class="text-box rounded p-3 mb-2 shadow-sm bg-white">
+                            <h4 class="tcolor title-1 fw-bolder">Automobiles</h4>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 text-center">
+                        <img src="home2.jpg" alt="Center Image"
+                            class="img-fluid rounded-circle border border-4 border-primary shadow">
+                    </div>
+
+                    <div class="col-md-5 d-flex flex-column justify-content-around">
+                        <div class="text-box rounded p-3 mb-2  shadow-sm bg-white">
+                            <h4 class="tcolor title-1 fw-bolder">Precision machining</h4>
+                        </div>
+                        <div class="text-box rounded p-3 mb-2 shadow-sm bg-white">
+                            <h4 class="tcolor title-1 fw-bolder">Automation</h4>
+                        </div>
+                        <div class="text-box rounded p-3 mb-2 shadow-sm bg-white">
+                            <h4 class="tcolor title-1 fw-bolder">Diesel engines</h4>
+                        </div>
+                        <div class="text-box rounded p-3 mb-2 shadow-sm bg-white">
+                            <h4 class="tcolor title-1 fw-bolder">Drones and Aeronautics</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products py-1" id="products">
+        <div class="mt-3 sec-bg">
+            <div class="container">
+                <h2 class="tcolor title-1 text-center py-2">OUR PRODUCTS</h2>
+
+                <div class="row mt-3 align-items-center align-content-center">
+
+                    <div class="col-md-6 mt-5 mt-md-0 order-md-last">
+                        <div class="product-image-container text-center">
+                            <img src="f2.jpg" class="img-fluid rounded shadow-sm" alt="Our Product Image">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 order-md-first">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover table-striped caption-top">
+                                <caption class="title-1">ANTI-VIBRATION STAINLESS STEEL LEVELLING PAD</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Stud Size</th>
+                                        <th scope="col">Total Threading Length</th>
+                                        <th scope="col">Base Diameter</th>
+                                        <th scope="col">Position</th>
+                                        <th scope="col">Base Loading</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>M8</td>
+                                        <td>75MM</td>
+                                        <td>36MM</td>
+                                        <td>Fixed</td>
+                                        <td>Upto 200KG</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M10</td>
+                                        <td>100MM</td>
+                                        <td>48mm</td>
+                                        <td>Fixed</td>
+                                        <td>Upto 600KG</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M12</td>
+                                        <td>100MM</td>
+                                        <td>60MM</td>
+                                        <td>Swivel15º</td>
+                                        <td>Upto 1KN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M16</td>
+                                        <td>150MM</td>
+                                        <td>75MM</td>
+                                        <td>Swivel15º</td>
+                                        <td>Upto 5KN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M20</td>
+                                        <td>160MM</td>
+                                        <td>100MM</td>
+                                        <td>Swivel15º</td>
+                                        <td>Upto 8KN</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products2 py-1" id="products2">
+        <div class="text-center mt-3 py  sec-bg">
+            <div class="container">
+                <h2 class="mb-5 tcolor title-1 py-2">OTHER PRODUCTS</h2>
+                <div class="row">
+
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">SS anti-vibration levelling pads</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">Stainless steel pins</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">Lock bolt & nut</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg ">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">Phosphating bush</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">SS levelling bolt</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">Brass connectors</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">Pin</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">Aeronautics assembly part</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">SS logo assembly</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 d-flex">
+                        <div class="p-3 shadow-sm rounded flex-fill card-hover-effect card-bg">
+                            <img src="home.jpg" class=" img-fluid ">
+                            <h4 class="mt-1 fw-bolder">M S assembly pin</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about py-1" id="about">
+        <div class="mt-3  sec-bg">
+            <div class="container">
+                <h2 class="tcolor title-1 text-center py-2">ABOUT US</h2>
+                <div class="row mt-3 align-items-center align-content-center">
+
+                    <div class="col-md-6">
+                        <div class="home-text">
+                            <h2 class="tcolor title-1 fs-5">R. M. Engineering Works, established in 2003</h2>
+                            <p class="text-muted mb-0 fs-6 flex-grow-1">
+                                has been dedicated to solving engineering challenges with accuracy, precision, loyalty,
+                                and timely delivery. In the field of mechanical engineering, we strive to serve our
+                                customers professionally. Our commitment lies in providing reliable, efficient, and
+                                cost-effective solutions to companies. We adhere to engineering codes of practice and
+                                standards, prioritizing health, safety, and the ultimate satisfaction of our
+                                clients.<br>
+                                <b>R. M. Engineering Works</b> takes pride in offering top-notch services and assuming
+                                responsibility for designing and executing entire projects with precision. Please find a
+                                list of our services and clientele that attests to our work quality and experience. If
+                                you have any pre-qualification queries about our company, feel free to contact us. We’re
+                                here to assist you. Thank you for considering our services, we assure you of our best
+                                efforts and cooperation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="home-img text-center">
+                            <img src="portfolio.png" class="img-fluid mw-100 rounded shadow-sm" alt="About Us Image">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="client bg-white py-1" id="clients">
+        <div class="mt-3  sec-bg">
+            <div class="container">
+                <h2 class="tcolor title-1 text-center mb-5">OUR CLIENTS</h2>
+
+                <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-6 col-sm-4 col-md-4 mb-4">
+                        <div class="client-logo-wrapper text-center">
+                            <img src="logo-footer.png" class="img-fluid client-logo" alt="Client Name 1 Logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 mb-4">
+                        <div class="client-logo-wrapper text-center">
+                            <img src="logo.png" class="img-fluid client-logo" alt="Client Name 2 Logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 mb-4">
+                        <div class="client-logo-wrapper text-center">
+                            <img src="schreiber-logo.png" class="img-fluid client-logo" alt="Client Name 3 Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center mb-4">
+                    <div class="col-6 col-sm-6 col-md-6 mb-4">
+                        <div class="client-logo-wrapper text-center">
+                            <img src="logo (1).png" class="img-fluid client-logo" alt="Client Name 4 Logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 mb-4">
+                        <div class="client-logo-wrapper text-center">
+                            <img src="chintamani-thermal-logo.jpg" class="img-fluid client-logo"
+                                alt="Client Name 5 Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6 col-sm-4 col-md-4 mb-4">
+                        <div class="client-logo-wrapper text-center">
+                            <img src="logo-footer.png" class="img-fluid client-logo" alt="Client Name 1 Logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 mb-4">
+                        <div class="client-logo-wrapper text-center">
+                            <img src="logo.png" class="img-fluid client-logo" alt="Client Name 2 Logo">
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-4 mb-4">
+                        <div class="client-logo-wrapper text-center">
+                            <img src="schreiber-logo.png" class="img-fluid client-logo" alt="Client Name 3 Logo">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact py-1" id="contact">
+        <div class="mt-3 sec-bg">
+            <div class="container">
+                <h2 class="text-center mb-5 tcolor title-1">CONTACT US</h2>
+                <div class="row align-items-stretch">
+
+                    <div class="col-md-6 mb-6 mb-md-0">
+                        <div class="contact-details p-4 h-100 shadow-sm rounded bg-white">
+                            <h4 class="mb-3 fw-bold tcolor">Reach Out To Us</h4>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-map-marker-alt fs-4 me-3 text-muted"></i>
+                                <div>
+                                    <h6 class="mb-1 fw-bold">Our Location</h6>
+                                    <p class="text-muted mb-0">
+                                        Sr No 63/1/1A, Badade Mala, Indira Nagar, <br>
+                                        Handewadi road, Hadapsar, Pune-411028
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-phone-alt fs-4 me-3 text-muted"></i>
+                                <div>
+                                    <h6 class="mb-1 fw-bold">Call Us Now</h6>
+                                    <p class="text-muted mb-0">
+                                        <a href="tel:+919876543210" class="text-decoration-none tcolor">+91 98765
+                                            43210</a><br>
+                                        <a href="tel:+911234567890" class="text-decoration-none tcolor">+91 12345
+                                            67890</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-start mb-0">
+                                <i class="fas fa-clock fs-4 me-3 text-muted"></i>
+                                <div>
+                                    <h6 class="mb-1 fw-bold">Opening Hours</h6>
+                                    <p class="text-muted mb-0">
+                                        Monday - Friday: 9:00 AM - 6:00 PM <br>
+                                        Saturday: 9:00 AM - 1:00 PM <br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-6">
+                        <div class="map-social-wrapper h-100 d-flex flex-column shadow-sm rounded bg-white">
+                            <div class="map-container flex-grow-1">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15126.791557007542!2d73.81156820546366!3d18.591605389659358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9e6c2e3d3ff%3A0x6a0f4a7c0f1b5b!2sRajgurunagar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                                    width="100%" height="300"
+                                    style="border:0; border-top-left-radius: .25rem; border-top-right-radius: .25rem;"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+
+                            <div class="social-icons p-3 text-center border-top">
+                                <a href="https://www.instagram.com/your_instagram" target="_blank"
+                                    class="text-decoration-none mx-2">
+                                    <i class="fab fa-instagram fs-3 tcolor"></i>
+                                </a>
+                                <a href="https://www.facebook.com/your_facebook" target="_blank"
+                                    class="text-decoration-none mx-2">
+                                    <i class="fab fa-facebook-f fs-3 tcolor"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/your_linkedin" target="_blank"
+                                    class="text-decoration-none mx-2">
+                                    <i class="fab fa-linkedin-in fs-3 tcolor"></i>
+                                </a>
+                                <a href="https://wa.me/919876543210" target="_blank" class="text-decoration-none mx-2">
+                                    <i class="fab fa-whatsapp fs-3 tcolor"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('--- CUSTOM SCRIPT STARTED ---'); // You should now see this!
+
+            const video = document.getElementById('introVideo');
+            const image = document.getElementById('fallbackImage');
+
+            if (!video) { console.error('Video element not found!'); }
+            if (!image) { console.error('Image element not found!'); }
+
+            video.muted = true; // Ensure muted for reliable autoplay
+
+            const playPromise = video.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    console.log('Video autoplay initiated successfully. Video is now playing.');
+                    video.style.display = 'block';
+                    image.classList.add('d-none'); // Ensure image is hidden initially
+                }).catch(error => {
+                    console.warn('Video autoplay prevented or failed:', error.name, error.message);
+                    console.log('Falling back to image immediately.');
+                    video.style.display = 'none';
+                    image.classList.remove('d-none');
+                });
+            }
+
+            video.onended = function () {
+                console.log('--- VIDEO ENDED EVENT FIRED! ---');
+                video.style.display = 'none'; // Hide the video
+                image.classList.remove('d-none'); // Show the image
+
+                console.log('Video display property after onended:', video.style.display);
+                console.log('Image classList after onended:', image.classList.value);
+
+                setTimeout(() => {
+                    const computedImageDisplay = window.getComputedStyle(image).display;
+                    console.log('Computed display of image after 100ms:', computedImageDisplay);
+                    if (computedImageDisplay === 'none') {
+                        console.error('Image is still hidden after attempt to show it! Check CSS conflicts.');
+                    }
+                }, 100);
+            };
+
+            video.onerror = function (event) {
+                console.error('Video loading or playback error!', event);
+                console.log('Falling back to image due to video error.');
+                video.style.display = 'none';
+                image.classList.remove('d-none');
+            };
+
+            // Fallback for immediate visual state if video somehow doesn't play
+            setTimeout(() => {
+                if (video.paused && video.style.display !== 'none' && video.readyState < 3) {
+                    console.warn('Video did not seem to play within 3 seconds. Forcing image fallback.');
+                    video.style.display = 'none';
+                    image.classList.remove('d-none');
+                }
+            }, 3000);
+        });
+    </script>
+
+</body>
+
+</html>
